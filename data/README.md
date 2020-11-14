@@ -35,7 +35,7 @@
   * `kialo_wklg2_conflict`: Word sequence knowledge conflict (int). (Table 5)
   * `domain40:X`: Domain of the post (binary).
 
-## Data filtering
+## Data Filtering
 * Successfully attacked sentences: filter sentences by `success_direct=1 or success_all_4=1`.
 * Unsuccessfully attacked sentences: filter sentences by `(direct=1 or all_4=1) and success_direct=0 and success_all_4=0`.
 * Unattacked sentences: filter sentences by `direct=0 and all_4=0`.

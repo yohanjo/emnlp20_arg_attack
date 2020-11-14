@@ -1,5 +1,5 @@
 # Detecting Attackable Sentences in Arguments
-Data and source code will be availble by Nov 15.
+This repository contains data and source code used in the paper `Detecting Attackable Sentences in Arguments` ([link](https://www.aclweb.org/anthology/2020.emnlp-main.1/)).
 
 ## Reference
 ```
