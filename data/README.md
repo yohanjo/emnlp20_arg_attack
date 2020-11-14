@@ -1,4 +1,4 @@
-# Data
+# CMV
 
 * `posts-sents.csv.zip`: All posts with individual sentences.
   * `post_id`: Post ID.
@@ -39,3 +39,18 @@
 * Successfully attacked sentences: filter sentences by `success_direct=1 or success_all_4=1`.
 * Unsuccessfully attacked sentences: filter sentences by `(direct=1 or all_4=1) and success_direct=0 and success_all_4=0`.
 * Unattacked sentences: filter sentences by `direct=0 and all_4=0`.
+
+
+# Kialo
+
+* `kialo.csv`: Kialo statements from kialo.com written until October 2019.
+  * `did`: Discussion ID.
+  * `cid`: Statement ID.
+  * `author`: User ID.
+  * `parent`: Parent statement ID.
+  * `relation`: Relation type (1=pro, -1=con, 0=neutral).
+  * `deleted`: 1 if the statement was deleted. This statement is not used in the paper.
+  * `rel-pro`: Number of pro responses.
+  * `rel-neu`: Number of neutral responses.
+  * `rel-con`: Number of con responses.
+  * `text`: Text.
