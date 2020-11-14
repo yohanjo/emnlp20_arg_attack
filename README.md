@@ -3,9 +3,19 @@ This repository contains data and source code used in the paper `Detecting Attac
 
 ## Reference
 ```
-@inproceedings{Jo:2020attack,
-    author = {Jo, Yohan and Bang, Seojin and Manzoor, Emaad and Hovy, Eduard and Reed, Chris},
-    title = {Detecting Attackable Sentences in Arguments},
-    booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing}, 
-    year = {2020}}
+@inproceedings{jo-etal-2020-detecting,
+    title = "Detecting Attackable Sentences in Arguments",
+    author = "Jo, Yohan  and
+      Bang, Seojin  and
+      Manzoor, Emaad  and
+      Hovy, Eduard  and
+      Reed, Chris",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.emnlp-main.1",
+    pages = "1--23",
+}
 ```
