@@ -36,20 +36,36 @@
   * `kialo_wklg2_conflict`: Word sequence knowledge conflict (int). (Table 5)
   * `domain40:X`: Domain of the post (binary).
 
+
 ## Data Filtering
 * Successfully attacked sentences: filter sentences by `success_direct=1 or success_all_4=1`.
 * Unsuccessfully attacked sentences: filter sentences by `(direct=1 or all_4=1) and success_direct=0 and success_all_4=0`.
 * Unattacked sentences: filter sentences by `direct=0 and all_4=0`.
 
-# CMV Raw
-Raw posts and comments written between January 1, 2014 and September 30, 2019, scraped using the Pushshift API. Go to the `cmv` folder and extract the compressed files.
+## Mapping Posts with Attacking Comments
+In case you want to map each post with the attacking comments, use `posts-qsents.csv`.
+This file may contain some posts that are not included in our dataset.
+The columns are as follows:
+* `post_id`: Post ID.
+* `n_sentences`: Number of sentences in the post.
+* `comment_id`: Comment ID that quotes the post. One post may have multiple attacking comments.
+* `delta`: 1 if the comment received a delta; 0 otherwise.
+* `direct_sents`: Sentences that are quoted directly by the comment with the `>` symbol (comma-separated).
+* `direct_n_quotes`: Number of direct quotes by the comment.
+* `all_4_sents`: Sentences that are quoted indirectly by the comment with word overlap (comma-separated).
+* `all_4_n_quotes`: Number of indirect quotes by the comment.
+The text of comments could be obtained from the raw json below.
+
+
+# CMV Raw 
+Raw posts and comments written between January 1, 2014 and September 30, 2019, scraped using the Pushshift API. Go to the `cmv` folder and extract the compressed files. You need to reassemble `comments.jsonlist.zip` before unzipping it:
 ```
 $ cat comments.jsonlist.zip.?? > comments.jsonlist.zip
-$ unzip comments.jsonlist.zip
 ```
+Note that the `id` field of each post and comment is prefixed with `t3_` and `t1_`, respectively, in our dataset. This is a Reddit convention.
+
 
 # Kialo
-
 * `kialo.csv`: Kialo statements from kialo.com written until October 2019.
   * `did`: Discussion ID.
   * `cid`: Statement ID.
