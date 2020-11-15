@@ -4,6 +4,7 @@
   * `post_id`: Post ID.
   * `sentence_no`: Sentence number.
   * `sentence`: Sentence text.
+  * `sentence_token`: Tokenized sentence.
 
 * `feat-combined.csv.zip`: All features and labels for individual sentences.
   * `split`: {train, val, test}.
