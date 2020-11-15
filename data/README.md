@@ -41,6 +41,12 @@
 * Unsuccessfully attacked sentences: filter sentences by `(direct=1 or all_4=1) and success_direct=0 and success_all_4=0`.
 * Unattacked sentences: filter sentences by `direct=0 and all_4=0`.
 
+# CMV Raw
+Raw posts and comments written between January 1, 2014 and September 30, 2019, scraped using the Pushshift API. Go to the `cmv` folder and extract the compressed files.
+```
+$ cat comments.jsonlist.zip.?? > comments.jsonlist.zip
+$ unzip comments.jsonlist.zip
+```
 
 # Kialo
 
