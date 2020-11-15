@@ -54,6 +54,7 @@ The columns are as follows:
 * `direct_n_quotes`: Number of direct quotes by the comment.
 * `all_4_sents`: Sentences that are quoted indirectly by the comment with word overlap (comma-separated).
 * `all_4_n_quotes`: Number of indirect quotes by the comment.
+
 The text of comments could be obtained from the raw json below.
 
 
