@@ -1,5 +1,8 @@
 # TASK 1
-The code will be uploaded soon.
+Use the R script `analy_attackability_char.R`.
+
+Analyze what characteristics of sentences are associated with a sentence’s attackability. (Chapter 5. Task 1: Attackability Characteristics)
+Return odds ratio (OR) and statistical significance of features.
 
 # TASK 2
 ## Logistic Regression
